@@ -48,6 +48,6 @@ main();
     // Function call
     let result = search(arr, n, x);
     (result == -1)
-        ? document.write("Element is not present in array")
-        : document.write("Element is present at index " + result);
+        ? console.log("Element is not present in array")
+        : console.log("Element is present at index " + result);
  
