@@ -38,8 +38,12 @@ let main = () => {
   }
   return 0;
 };
- 
+
+
+// linearsearch run..
 main();
+
+
  
     let arr = [ 2, 3, 4, 10, 40 ];
     let x = 10;
