@@ -1,5 +1,4 @@
-function merge(arr, l, m, r)
-{
+function merge(arr, l, m, r){
     var n1 = m - l + 1;
     var n2 = r - m;
  
@@ -60,7 +59,7 @@ function mergeSort(arr,l, r){
     if(l>=r){
         return;//returns recursively
     }
-    var m =l+ parseInt((r-l)/2);
+    var m = l+ parseInt((r-l)/2);
     mergeSort(arr,l,m);
     mergeSort(arr,m+1,r);
     merge(arr,l,m,r);
@@ -68,20 +67,21 @@ function mergeSort(arr,l, r){
  
 // UTILITY FUNCTIONS
 // Function to print an array
-function printArray( A, size)
-{
-    for (var i = 0; i < size; i++)
-       document.write(  A[i] + " ");
+function printArray(A){
+    
+    A.forEach(element => {
+        process.stdout.write(element + " ");
+    });
 }
  
  
-var arr = [ 12, 11, 13, 5, 6, 7 ];
+    var arr = [ 12, 11, 13, 5, 6, 7 ];
     var arr_size = arr.length;
  
-    document.write(  "Given array is <br>");
-    printArray(arr, arr_size);
+    console.log("Given array is ");
+    printArray(arr);
  
     mergeSort(arr, 0, arr_size - 1);
  
-    document.write( "<br>Sorted array is <br>");
-    printArray(arr, arr_size);
+    console.log("\nSorted array is ");
+    printArray(arr);
