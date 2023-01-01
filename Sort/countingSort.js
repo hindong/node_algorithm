@@ -19,8 +19,8 @@ function countingSort(arr){
      return arr;
 }
  
-let arr = [ 'g', 'e', 'e', 'k', 's', 'f', 'o',
-                   'r', 'g', 'e', 'e', 'k', 's' ];
+let arr = [ 'h', 'e', 'l', 'l', 'o', 'w', 'o',
+                   'r', 'l', 'd', 'a', 'b', 'c' ];
  
 arr = countingSort(arr);
 console.log("Sorted character array is ");
