@@ -68,3 +68,5 @@ g.addEdge(2, 8, 2);
 g.addEdge(2, 5, 4);
 g.addEdge(3, 4, 9);
 g.addEdge(3, 5, 14);
+
+g.shortestPath(0);
