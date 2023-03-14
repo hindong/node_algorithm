@@ -1,4 +1,4 @@
-const INT: number = 2147483647;
+const INF: number = 2147483647;    // infinite
 
 class Graph{
 
